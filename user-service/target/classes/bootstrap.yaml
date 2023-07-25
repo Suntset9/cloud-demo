@@ -9,5 +9,6 @@ spring:
     nacos:
 #      server-addr: localhost:80 #nacos集群地址
       server-addr: localhost:8848 #nacos单机地址
+#      server-addr: nacos:8848 #nacos服务部署
       config:
         file-extension: yaml
