@@ -50,4 +50,13 @@ public class UserController {
         return properties;
     }
 
+    /**
+     * gateway网关过滤器测试
+     * @param tmp
+     */
+    @GetMapping("/test")
+    public void test(@RequestHeader(value = "Truth",required = false) String tmp) {
+        System.out.println("truth:"+tmp);
+    }
+
 }
